@@ -24,7 +24,7 @@ const useDataFetching = (category, dataHandler) => {
       mode: 'cors',
       method: 'GET',
       headers: { 
-        'X-API-KEY': import.meta.env.VITE_ACNH_KEY,
+        'X-API-KEY': import.meta.env.ACNH_KEY,
       }
     })
       .then((response) => {
