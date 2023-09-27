@@ -31,9 +31,7 @@ const Router = () => {
       ],
       errorElement: <ErrorPage />,
     },
-  ], {
-    basename: '/nook-mart'
-  })
+  ])
   
   return <RouterProvider router={router} />;
 }
