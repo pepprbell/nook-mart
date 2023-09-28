@@ -7,7 +7,7 @@ import Details from './pages/Details'
 import App from "./App";
 
 const Router = () => {
-  const router = createBrowserRouter([
+  const routes = [
     {
       path: '/',
       element: <App />,
@@ -31,7 +31,11 @@ const Router = () => {
       ],
       errorElement: <ErrorPage />,
     },
-  ])
+  ]
+
+  const router = createBrowserRouter(routes, {
+    basename: '/nook-mart'
+  })
   
   return <RouterProvider router={router} />;
 }
