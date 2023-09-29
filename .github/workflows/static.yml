@@ -45,7 +45,7 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo "ACNH_KEY=${{ secrets.ACNH_KEY }}" >> .env
+          echo "ACNH_KEY=${{ secrets.VITE_ACNH_KEY }}" >> $GITHUB_ENV
 
       - name: Build
         run: npm run build
