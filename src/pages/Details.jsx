@@ -10,6 +10,7 @@ import capitalize from '../utils/capitalize';
 import useCart from '../utils/useCart';
 import nameData from '../assets/nameData'
 import Location from '../components/Location';
+import ErrorPage from './ErrorPage'
 
 const Details = () => {
   const [dataHandler, cartHandler] = useContext(DataContext)
@@ -66,7 +67,7 @@ const Details = () => {
         </article>
         </>
       ) : itemError ? (
-        <h1>error</h1>
+        <ErrorPage />
       ) : (
         <>
         <aside>

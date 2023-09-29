@@ -1,12 +1,13 @@
 import { useParams } from 'react-router-dom'
 import useDataFetching from '../hooks/useDataFetching';
-import Card from '../components/Card'
 import { useEffect, useRef, useContext, useState } from 'react';
-import './Category.css'
 import { DataContext } from '../context/DataContext';
+import './Category.css'
+import Card from '../components/Card'
 import useSort from '../hooks/useSort';
 import SkeletonCard from '../components/SkeletonCard';
 import nameData from '../assets/nameData'
+import ErrorPage from './ErrorPage'
 
 const Category = () => {
   let { type } = useParams()
@@ -103,7 +104,13 @@ const Category = () => {
     loadMore()
   }, [loadingMore])
 
-
+  function makeList() {
+    let array = []
+    printedData.map((each) => {
+      array.push(<li key={each.name} id={each.name}><Card res={each} type={type} /></li>)
+    })
+    return array
+  }
 
   return (
     <section className='category'>
@@ -119,18 +126,18 @@ const Category = () => {
         </div>
       </section>
       <article>
-        <menu>
           {loading ? (
-            <>{isloading()}</>
+            <menu>
+              {isloading()}
+            </menu>
           ) : error ? (
-            <div><h1>error</h1></div>
+            <ErrorPage />
           ) : (
-            printedData.map((each) => {
-              return <li key={each.name} id={each.name}><Card res={each} type={type} /></li>
-            })
+            <menu>
+              {makeList()}
+            </menu>
           )}
           {loadingMore && <p>Loading...</p>}
-        </menu>
       </article>
     </section>
   );
