@@ -34,7 +34,6 @@ const Router = () => {
   ]
 
   const router = createBrowserRouter(routes, {
-    basename: '/nook-mart'
   })
   
   return <RouterProvider router={router} />;
