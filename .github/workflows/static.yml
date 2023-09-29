@@ -43,10 +43,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Create .env file
-        run: |
-          echo "VITE_ACNH_KEY=${{ secrets.VITE_ACNH_KEY }}" >> $GITHUB_ENV
-
       - name: Build
         run: npm run build
 
@@ -58,7 +54,3 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
