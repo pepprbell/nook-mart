@@ -106,8 +106,8 @@ const Category = () => {
 
   function makeList() {
     let array = []
-    printedData.map((each) => {
-      array.push(<li key={each.name} id={each.name}><Card res={each} type={type} /></li>)
+    printedData.map((each, idx) => {
+      array.push(<li key={each.name} id={each.name}><Card res={each} type={type} idx={idx} /></li>)
     })
     return array
   }
