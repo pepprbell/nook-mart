@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 import './Carousel.css'
 import Image from './Image'
 
+import car1 from '../assets/car1.webp'
+import car2 from '../assets/car2.webp'
+import car3 from '../assets/car3.webp'
+import car4 from '../assets/car4.webp'
+
 const Carousel = ({  }) => {
   const [imageList, setImageList] = useState([])
   const urlList = [
-    'https://github.com/pepprbell/odin-projects/assets/67995526/7bf31da7-95b5-413e-afcc-083e58db32d8',
-    'https://github.com/pepprbell/odin-projects/assets/67995526/18c9726a-d836-4305-a24c-7b86b58811ef',
-    'https://github.com/pepprbell/odin-projects/assets/67995526/17a64bbb-5230-4ab5-bfe7-a0220548f5b4',
-    'https://github.com/pepprbell/odin-projects/assets/67995526/b497650b-e1e9-41b9-b183-26cb1a94ecfc',
+    car1,
+    car2,
+    car3,
+    car4
   ]
   const hrefList = [
     '/fish/King salmon',
