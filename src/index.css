@@ -25,6 +25,10 @@
   --bannerCount: 8;
 }
 
+@font-face {
+  font-display: swap;
+}
+
 body {
   margin: 0;
   display: flex;
