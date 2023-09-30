@@ -1,14 +1,16 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
 import './Home.css'
+
 import fish from '../assets/Fish_NH_Icon.png'
 import bugs from '../assets/Bug_NH_Icon.png'
 import sea from '../assets/Sea_Creature_NH_Icon.png'
-import { Link } from 'react-router-dom';
-import dayBanner from '../assets/banner_day.png'
-import dayBannerM from '../assets/banner_day_m.png'
-import nightBanner from '../assets/banner_night.png'
-import nightBannerM from '../assets/banner_night_m.png'
-import { useEffect, useState } from 'react';
+
+import dayBanner from '../assets/banner_day.webp'
+import dayBannerM from '../assets/banner_day_m.webp'
+import nightBanner from '../assets/banner_night.webp'
+import nightBannerM from '../assets/banner_night_m.webp'
 
 const Home = () => {
   const now = new Date().getHours()
