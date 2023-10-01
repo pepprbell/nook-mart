@@ -1,6 +1,5 @@
 const Image = ({ src, idx }) => {
   const num = idx !== undefined ? idx : 0
-  console.log(num)
 
   return (
     <>

@@ -24,10 +24,6 @@
         width: calc(50% - 12px);
     }
 
-    & article {
-        margin-top: 50px;
-    }
-
     }
 }
 
@@ -37,6 +33,10 @@
 
     & aside, & article {
         width: calc(100%);
+    }
+
+    & article {
+        margin-top: 50px;
     }
 
     }
