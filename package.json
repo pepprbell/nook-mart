@@ -2,7 +2,7 @@
   "name": "odin-shopping-cart",
   "homepage": "https://nook-mart-ehodxw7ot-pepprbell.vercel.app/",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
