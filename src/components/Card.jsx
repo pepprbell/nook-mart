@@ -5,7 +5,7 @@ import useCart from '../utils/useCart';
 import Image from './Image';
 import './Card.css'
 
-const Card = ({ res, type, idx }) => {
+const Card = ({ res, type, lazy }) => {
   const [dataHandler, cartHandler] = useContext(DataContext)
   const data = res
   const ref = useRef(0)
@@ -22,7 +22,7 @@ const Card = ({ res, type, idx }) => {
     <div className="card">
       <Link to={'/'+type+'/'+data.name} title={data.name} className='overlayLink'></Link>
       <figure>
-        <Image src={data['image_url']} idx={idx}></Image>
+        <Image src={data['image_url']} lazy={lazy}></Image>
         <button onClick={addToCart}><span className="material-symbols-rounded">add_shopping_cart</span></button>
       </figure>
       <p>{data.nameKR}</p>

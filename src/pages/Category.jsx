@@ -106,8 +106,27 @@ const Category = () => {
 
   function makeList() {
     let array = []
+    const width = window.innerWidth
+    let loadingCount
+
+    if (width > 1000) {
+      loadingCount = 15
+    } else if (width > 824) {
+      loadingCount = 12
+    } else if (width > 627) {
+      loadingCount = 9
+    } else if (width > 430 ) {
+      loadingCount = 6
+    } else {
+      loadingCount = 3
+    }
+    
     printedData.map((each, idx) => {
-      array.push(<li key={each.name} id={each.name}><Card res={each} type={type} idx={idx} /></li>)
+      if (idx < loadingCount) {
+        array.push(<li key={each.name} id={each.name}><Card res={each} type={type} lazy={false} /></li>)
+      } else {
+        array.push(<li key={each.name} id={each.name}><Card res={each} type={type} lazy={true} /></li>)
+      }
     })
     return array
   }

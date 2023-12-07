@@ -1,11 +1,9 @@
-const Image = ({ src, idx }) => {
-  const num = idx !== undefined ? idx : 0
-
+const Image = ({ src, lazy }) => {
   return (
     <>
-      {src != '' && num >= 20 ?
+      {src != '' && lazy ?
         <img src={src} loading="lazy" alt=""  /> :
-        src != '' && num < 20 ?
+        src != '' && !lazy ?
         <img src={src} alt=""  /> :
         <div><span className="material-symbols-outlined notSupported">image_not_supported</span></div>
       }
