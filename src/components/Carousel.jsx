@@ -22,6 +22,12 @@ const Carousel = ({  }) => {
     '/sea/lobster',
     '/',
   ]
+  const titleList = [
+    'link to king salmon',
+    'link to emperor butterfly',
+    'link to lobster',
+    'blank link'
+  ]
   const [current, setCurrent] = useState(0)
   const [transition, setTransition] = useState('smooth')
   const [buttonSwitch, setButtonSwitch] = useState(false)
@@ -55,7 +61,7 @@ const Carousel = ({  }) => {
       let idx = i < len ? i : i - len
       newList.push(
       <li key={i}>
-        <Link to={hrefList.at(idx)} className="bannerLink" />
+        <Link to={hrefList.at(idx)} title={titleList.at(idx)} className="bannerLink" />
         <Image src={urlList.at(idx)}/>
       </li>)
     }

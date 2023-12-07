@@ -15,6 +15,7 @@ import nightBannerM from '../assets/banner_night_m.webp'
 const Home = () => {
   const now = new Date().getHours()
   const to = 6 <= now && now < 18 ? '/fish/Guppy' : '/fish/Barreleye'
+  const title = 6 <= now && now < 18 ? 'link to Guppy' : 'link to Barreleye'
   const [src, setSrc] = useState(dayBanner)
 
   useEffect(() => {
@@ -46,22 +47,22 @@ const Home = () => {
     <section className='home'>
       <Carousel />
       <div className='horiBanner'>
-        <Link to={to}></Link>
+        <Link to={to} title={title}></Link>
         <img src={src} alt="" />
       </div>
       <section className='miniButtons'>
         <div className='miniButton'>
-          <Link to='/fish' className='miniLink' />
+          <Link to='/fish' title='link to category:fish' className='miniLink' />
           <img src={fish} alt="" />
           <p>물고기</p>
         </div>
         <div className='miniButton'>
-          <Link to='/bugs' className='miniLink' />
+          <Link to='/bugs' title='link to category:bugs' className='miniLink' />
           <img src={bugs} alt="" />
           <p>곤충</p>
         </div>
         <div className='miniButton'>
-          <Link to='/sea' className='miniLink' />
+          <Link to='/sea' title='link to category:sea creatures' className='miniLink' />
           <img src={sea} alt="" />
           <p>바다 생물</p>
         </div>

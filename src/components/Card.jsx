@@ -20,7 +20,7 @@ const Card = ({ res, type, idx }) => {
 
   return (
     <div className="card">
-      <Link to={'/'+type+'/'+data.name} className='overlayLink'></Link>
+      <Link to={'/'+type+'/'+data.name} title={data.name} className='overlayLink'></Link>
       <figure>
         <Image src={data['image_url']} idx={idx}></Image>
         <button onClick={addToCart}><span className="material-symbols-rounded">add_shopping_cart</span></button>

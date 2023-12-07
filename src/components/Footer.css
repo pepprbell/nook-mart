@@ -5,7 +5,6 @@ footer {
     justify-content: space-between;
     padding: 0 calc(50vw - 500px);
     background-color: var(--border);
-    color: var(--light);
     box-sizing: border-box;
     border: none;
 }
@@ -17,7 +16,7 @@ footer p {
 }
 
 footer a {
-    color: var(--light);
+    color: var(--color);
 }
 
 footer p:last-child {
