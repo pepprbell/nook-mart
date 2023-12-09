@@ -31,7 +31,7 @@ const Display = ({ urlList }) => {
   return (
     <div className="display">
       <figure>
-        <Image src={curr} />
+        <Image src={curr} lazy={false} />
       </figure>
       {mini()}
     </div>
