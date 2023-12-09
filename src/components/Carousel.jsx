@@ -137,8 +137,8 @@ const Carousel = ({  }) => {
       <ul className={"viewport " + transition} ref={viewRef}>
         {imageList}
       </ul>
-      <button className="prev" onClick={prev} disabled={buttonSwitch}><span className="material-symbols-rounded">arrow_back_ios_new</span></button>
-      <button className="next" onClick={next} disabled={buttonSwitch}><span className="material-symbols-rounded">arrow_forward_ios</span></button>
+      <button className="prev" onClick={prev} disabled={buttonSwitch}><span className="material material-arrow-back"></span></button>
+      <button className="next" onClick={next} disabled={buttonSwitch}><span className="material material-arrow-forward"></span></button>
       <span className="count"><b>{current + 1}</b> / {urlList.length}</span>
     </div>
   )

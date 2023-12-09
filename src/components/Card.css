@@ -50,9 +50,9 @@
     z-index: 999;
 }
 
-.card button .material-symbols-rounded {
-    color: var(--color);
-    font-size: 24px;
+.card button .material {
+    width: 24px;
+    height: 24px;
     margin-top: 5px;
 }
 

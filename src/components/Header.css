@@ -12,9 +12,8 @@ header {
         box-sizing: border-box;
     }
 
-    & section .material-symbols-rounded {
-        color: var(--color);
-        font-size: 40px;
+    & section .material {
+        width: 40px;
     }
     
     & nav {
@@ -91,9 +90,8 @@ header {
             height: 68px;
         }
 
-        & section .material-symbols-rounded {
-            color: var(--color);
-            font-size: 30px;
+        & section .material {
+            width: 30px;
         }
     }
 

@@ -43,16 +43,14 @@
     background-color: var(--bolder);
 }
 
-.checkbox .material-symbols-rounded {
+.checkbox .material {
     position: absolute;
-    font-size: 22px;
+    width: 18px;
     margin: 0;
     padding: 0;
-    left: -3px;
-    top: -3px;
-    width: fit-content;
-    height: fit-content;
-    color: #fff;
+    left: -1px;
+    top: -1px;
+    background-blend-mode: difference;
 }
 
 /* header */
@@ -82,9 +80,8 @@
     position: relative;
 }
 
-.cartTitle button .material-symbols-rounded {
-    font-size: 22px;
-    font-weight: 300;
+.cartTitle button .material {
+    width: 22px;
     position: absolute;
     left: -20px;
     top: -3px;
@@ -105,7 +102,8 @@
 
 .missingCart > span {
     color: var(--accent);
-    font-size: 60px;
+    width: 60px;
+    opacity: 0.4;
 }
 
 @media (max-width: 1000px) {

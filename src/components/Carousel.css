@@ -22,20 +22,21 @@
         top: 186px;
         padding: 0;
 
-        .material-symbols-rounded {
-            font-size: 20px;
-            color: var(--color);
+        .material {
+            display: inline-block;
+            width: 20px;
             line-height: 40px;
         }
     }
 
     .prev {
         left: calc(50% - 410px + 20px);
+        padding-right: 3px;
     }
 
     .next {
         right: calc(50% - 410px + 20px);
-        padding-left: 4px;
+        padding-left: 3px;
     }
 
     & img {
@@ -67,8 +68,8 @@
             line-height: 20px;
             opacity: 0.4;
             
-            .material-symbols-rounded {
-                font-size: 16px;
+            .material {
+                width: 16px;
                 line-height: 32px;
             }
         }

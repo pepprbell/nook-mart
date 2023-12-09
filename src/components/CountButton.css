@@ -29,8 +29,8 @@
         text-align: center;
     }
 
-    .material-symbols-rounded {
-        font-weight: 200;
+    .material {
+        opacity: 0.5;
         line-height: 30px;
     }
 }

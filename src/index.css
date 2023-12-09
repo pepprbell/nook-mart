@@ -31,26 +31,6 @@
 	src: url('./assets/fonts/PretendardVariable.woff2') format('woff2-variations');
 }
 
-@font-face {
-  font-family: 'Material Symbols Rounded';
-  font-style: normal;
-  src: url('./assets/fonts/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2') format('woff2');
-}
-
-.material-symbols-rounded {
-  font-family: 'Material Symbols Rounded';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -106,4 +86,43 @@ b {
   .money > b {
     font-size: 16px;
   }
+}
+
+.material {
+  display: inline-block;
+  width: 24px;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.material-add {
+  background-image: url('./assets/icons/add.svg');
+}
+.material-remove {
+  background-image: url('./assets/icons/remove.svg');
+}
+.material-add-shopping-cart {
+  background-image: url('./assets/icons/add_shopping_cart.svg');
+}
+.material-close {
+  background-image: url('./assets/icons/close.svg');
+}
+.material-delete {
+  background-image: url('./assets/icons/delete.svg');
+}
+.material-done {
+  background-image: url('./assets/icons/done.svg');
+}
+.material-hide-image {
+  background-image: url('./assets/icons/hide_image.svg');
+}
+.material-shopping-cart {
+  background-image: url('./assets/icons/shopping_cart.svg');
+}
+.material-arrow-back {
+  background-image: url('./assets/icons/arrow_back.svg');
+}
+.material-arrow-forward {
+  background-image: url('./assets/icons/arrow_forward.svg');
 }

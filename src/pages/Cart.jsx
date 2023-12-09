@@ -90,15 +90,15 @@ const Cart = () => {
       <section className="cartTitle">
         <label className='checkbox'>
           <input type="checkbox" name="" id="" ref={selectAllRef} onChange={handleCheckAll} />
-          <span><span className="material-symbols-rounded">done</span></span>
+          <span><span className="material material-done"></span></span>
           전체 선택
         </label>
-        <button onClick={() => deleteItem(false)}><span className="material-symbols-rounded">close</span>선택 상품 삭제</button>
+        <button onClick={() => deleteItem(false)}><span className="material material-close"></span>선택 상품 삭제</button>
       </section>
       <article className="cartMain">
         {cart.size === 0 ? (
           <div className="missingCart">
-            <span className="material-symbols-rounded">shopping_cart</span>
+            <span className="material material-shopping-cart"></span>
             <p>장바구니에 담긴 상품이 없습니다.</p>
           </div>
         ) : (
