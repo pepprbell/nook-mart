@@ -40,7 +40,7 @@ const CartObject = ({ data, oncheck, checkRef, del }) => {
       <Link to={`/${data[0].category}/${data[0].name}`} className='overlayLink' />
       <li className='cartImg'>
         <label className='checkbox'>
-            <input type="checkbox" name="" id="" onChange={handleCheck} ref={checkRef} />
+            <input type="checkbox" name="check item" id="" onChange={handleCheck} ref={checkRef} />
             <span><span className="material material-done"></span></span>
           </label>
           <img src={data[0].image_url} alt="" />

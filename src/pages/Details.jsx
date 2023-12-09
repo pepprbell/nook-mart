@@ -84,7 +84,7 @@ const Details = () => {
             <CountButton className="cntbutton" numstate={[num, setNum]} inputref={inputref} />
           </div>
           <p className='money'>총 {num}개  |  <b>{(num*itemData[0].sell_nook).toLocaleString('en-US')}</b>벨</p>
-          <button className='addCart' onClick={handleClick}>장바구니에 담기</button>
+          <button className='addCart' onClick={handleClick} aria-label='add to cart'>장바구니에 담기</button>
         </article>
         <main></main>
         </>

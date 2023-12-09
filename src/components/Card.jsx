@@ -23,7 +23,7 @@ const Card = ({ res, type, lazy }) => {
       <Link to={'/'+type+'/'+data.name} title={data.name} className='overlayLink'></Link>
       <figure>
         <Image src={data['image_url']} lazy={lazy}></Image>
-        <button onClick={addToCart}><span className="material material-add-shopping-cart"></span></button>
+        <button onClick={addToCart} aria-label='add to cart'><span className="material material-add-shopping-cart"></span></button>
       </figure>
       <p>{data.nameKR}</p>
       <p className="money"><b>{data.sell_nook.toLocaleString('en-US')}</b>벨</p>

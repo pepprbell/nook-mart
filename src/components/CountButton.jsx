@@ -39,9 +39,9 @@ const CountButton = ({ numstate, inputref }) => {
 
   return (
     <span className="countButton">
-      <button onClick={handleMinus}><span className="material material-remove"></span></button>
+      <button onClick={handleMinus} aria-label='decrease amount'><span className="material material-remove"></span></button>
       <input type="number" onChange={(e) => handleInput(e)} ref={inputref} onBlur={handleInput} min={1} max={99}/>
-      <button onClick={handlePlus}><span className="material material-add"></span></button>
+      <button onClick={handlePlus} aria-label='increase amount'><span className="material material-add"></span></button>
     </span>
   )
 }
